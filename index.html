@@ -25,7 +25,7 @@
 
             for (var i=0, c=nodes.length; i<c; i++) {
                 li = document.createElement("li");
-                cn = document.createTextNode(nodes[i].getElementsByName("url"));
+                cn = document.createTextNode(nodes[i].getElementsByTagName("url"));
 
                 li.appendChild(cn);
                 ol.appendChild(li);
