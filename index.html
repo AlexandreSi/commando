@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Hello kitty</title>
     <script type="text/javascript">
-        <!--
+
         function request(callback) {
             var xhr = getXMLHttpRequest();
 
@@ -15,7 +15,7 @@
                 }
             };
 
-            xhr.open("GET", "chats.xml", true);
+            xhr.open("GET", "./src/chats.xml", true);
             xhr.send(null);
         }
 
@@ -33,7 +33,7 @@
 
             document.getElementById("output").appendChild(ol);
         }
-        //-->
+
     </script>
 </head>
 
