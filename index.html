@@ -15,7 +15,7 @@
                 }
             };
 
-            xhr.open("GET", "http://thecatapi.com/api/images/get?format=xml&results_per_page=20.xml", true);
+            xhr.open("GET", "http://thecatapi.com/api/images/get?format=xml&results_per_page=20", true);
             xhr.send(null);
         }
 
@@ -40,7 +40,7 @@
 
 <body>
 <p>
-    <button onclick="request(readData);">Afficher le fichier XML</button>
+    <button onclick="request(readData);">Afficher les chats</button>
     <div id="output"></div>
 </p>
 </body>
