@@ -9,12 +9,17 @@
     <div>
         <script type="text/javascript">
             var xhr = new XMLHttpRequest();
-
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+                    alert("OK"); // C'est bon \o/
+                }
+            };
             xhr.open('GET', 'http://thecatapi.com/api/images/get?format=xml&results_per_page=20', false);
             xhr.send(null)
-            var req = xhr.responseXML;
+
+            /*var req = xhr.responseXML;
             var images = req.getElementsByTagName("image");
-            document.getElementById("p_images").innerHTML = images[0].firstChild.nodeValue;
+            document.getElementById("p_images").innerHTML = images[0].firstChild.nodeValue;*/
 
         </script>
     </div>
